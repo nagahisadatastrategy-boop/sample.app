@@ -7,7 +7,8 @@
 import streamlit as st
 import pandas as pd
 
-file_path = r"C:\Users\user\Desktop\Python\data\03.アプリ\sales.xlsx"
+#file_path = r"C:\Users\user\Desktop\Python\data\03.アプリ\sales.xlsx"
+file_path = "sales.xlsx"
 
 df = pd.read_excel(file_path, sheet_name="Sales")
 df["Date"] = pd.to_datetime(df["Date"])
